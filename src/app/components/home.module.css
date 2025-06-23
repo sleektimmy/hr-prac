@@ -1,0 +1,13 @@
+.bg{
+    /* background-image: linear-gradient(60deg, fuchsia 45%, orange 45%); */
+    background-image: url(/banner.jpg);
+    background-color: red;
+    background-blend-mode: lighten;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
