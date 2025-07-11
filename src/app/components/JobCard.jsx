@@ -1,5 +1,6 @@
 import jobs from "../data/jobs"
 import { MdHomeWork } from "react-icons/md";
+import Button from "./Button";
 
 
 export default function JobCard(props) {
@@ -14,6 +15,8 @@ export default function JobCard(props) {
             <h2 className="text-bold uppercase text-2xl font-bold ">{job.title}</h2>
             <p>{job.category}</p>
             <p>{job.location}</p>
+
+            <Button title={job.title} />
         </article>
     ))
   return (
