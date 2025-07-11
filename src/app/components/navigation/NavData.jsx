@@ -13,6 +13,7 @@ export default function NavData() {
     <li><Link href="/jobs">Jobs</Link></li>
     <li><Link href="/contact">Contact</Link></li>
     <li><Link href="/blog">Blog</Link></li>
+    <li><Link href="/dashboard">Dashboard</Link></li>
     </>
   )
 }

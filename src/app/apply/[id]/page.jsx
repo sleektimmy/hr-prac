@@ -1,7 +1,15 @@
+"use client"
+// import SaveButton from "@/app/components/SaveButton";
+import Success from "@/app/components/Success";
+import { useState } from "react";
 
 export default async function JobApplication({params}) {
   const { id } = await params;
+
+
   return (
+
+    <>
     <div>
         <h1 className="text-3xl font-bold text-center my-8">Job Application</h1>
         <p className="text-center text-gray-600 mb-4">
@@ -32,8 +40,15 @@ export default async function JobApplication({params}) {
                 <label className="block text-gray-700 mb-2" htmlFor="coverLetter">Cover Letter</label>
                 <input type="file" id="coverLetter" name="coverLetter" accept=".pdf" required className="w-full px-3 py-2 border border-gray-300 rounded" />
             </div>
-            <button type="submit" className="w-full bg-red-800 text-white py-2  cursor-pointer rounded hover:bg-red-700 transition duration-200">Submit Application</button>
+           <Success />
     </form>
     </div>
+
+
+   
+  </>
+
+
+ 
 )
 }
